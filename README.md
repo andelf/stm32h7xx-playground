@@ -1,5 +1,7 @@
 # STM32H750
 
+Board: https://github.com/WeActStudio/MiniSTM32H7xx
+
 - Blue LED: PE3
 - Button: PC13
 

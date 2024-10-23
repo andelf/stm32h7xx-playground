@@ -20,7 +20,7 @@ embassy-sync = { version = "0.6.0", path = "../embassy/embassy-sync", features =
     "defmt",
 ] }
 embassy-executor = { version = "0.6.0", path = "../embassy/embassy-executor", features = [
-    "task-arena-size-32768",
+    "nightly",
     "arch-cortex-m",
     "executor-thread",
     "executor-interrupt",
@@ -59,10 +59,12 @@ embedded-hal-1 = { package = "embedded-hal", version = "1.0" }
 panic-probe = { version = "0.3", features = ["print-defmt"] }
 heapless = { version = "0.8", default-features = false }
 assign-resources = "0.4.1"
-edrv-st7735 = "0.0.1"
+edrv-st7735 = { version = "0.0.1", path = "../embedded-drivers/st7735" }
 embedded-graphics = "0.8.1"
 embedded-hal-bus = "0.2.0"
 embassy-embedded-hal = { version = "0.2.0", path = "../embassy/embassy-embedded-hal" }
+tinygif = "0.0.4"
+embedded-hal-async = "1.0.0"
 
 
 # cargo build/run
